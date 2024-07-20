@@ -18,8 +18,8 @@ class PieChart extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: CustomPaint(
-              child: Container(),
               foregroundPainter: PieChartPainter(),
+              child: Container(),
             ),
           ),
           Center(
@@ -49,7 +49,7 @@ class PieChartPainter extends CustomPainter {
     Offset center = Offset(size.width / 2, size.height / 2);
     double radius = min(size.width / 2, size.height / 2);
 
-    var paint = new Paint()
+    var paint = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = 50;
 
